@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
+
 export function Register(userData) {
     let users = JSON.parse(localStorage.getItem('users')) || [];
     if (users.find(user => user.username === userData.username)) {
@@ -5,34 +7,28 @@ export function Register(userData) {
     }
     users.push(userData);
     localStorage.setItem("users", JSON.stringify(users));
+
+    // Redirect after registration
     return { success: "User registered successfully" };
 }
 
-// login.js
+// login.js (Updated)
 export function login({ username, password }) {
     const users = JSON.parse(localStorage.getItem("users")) || [];
-    console.log("Stored users:", users);
-
-    if (users.length === 0) {
-        return { error: "No users found. Please register first." };
-    }
-
+    
     const validUser = users.find(user => user.username === username && user.password === password);
-    console.log("Valid user found:", validUser);
-
+    
     if (validUser) {
-        localStorage.setItem("currentuser", JSON.stringify(validUser));
-        return { success: "Login successful" };
+        localStorage.setItem("currentuser", JSON.stringify(validUser)); // Store the current user in localStorage
+        return { success: true };
     } else {
-        return { error: "Invalid username or password" };
+        return { error: 'Invalid username or password' };
     }
 }
-
-
-export function logout(){
-    localStorage.removeItem("currentuser")
+export function logout() {
+    localStorage.removeItem("currentuser");
 }
 
-export function getcurrentuser(){
+export function getcurrentuser() {
     return JSON.parse(localStorage.getItem("currentuser"));
 }

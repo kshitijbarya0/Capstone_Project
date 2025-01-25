@@ -274,3 +274,22 @@ h1{
   text-align: center;         /* center text inside the div */
   padding: 20px;
 }
+
+
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.ant-layout-header {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.ant-layout-sider {
+  background-color: #f0f2f5;
+}
+
+.ant-card {
+  margin-bottom: 20px;
+}
