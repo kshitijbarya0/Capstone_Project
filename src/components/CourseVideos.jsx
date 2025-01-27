@@ -4,7 +4,7 @@ function CourseVideos() {
   return (
     <div>
         <h1>hello</h1>
-        <h1>capstone </h1>
+        <h1>hement </h1>
     </div>
   )
 }
