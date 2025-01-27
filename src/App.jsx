@@ -22,6 +22,7 @@ function App() {
           <Route path="/mcq" element={<MCQ />} />
           <Route path="/result-analysis" element={<ResultAnalysis />} />
           <Route path="/admin-dashboard" element={<DashboardAdmin />} />
+          
         </Routes>
       </Router>
     </>
