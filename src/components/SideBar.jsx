@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
+import {Layout,Menu } from 'antd';
 
 const { Sider } = Layout;
 
@@ -23,6 +23,9 @@ const Sidebar = () => {
         </Menu.Item>
         <Menu.Item key="4">
           <Link to="/result-analysis">Result Analysis</Link>
+        </Menu.Item>
+        <Menu.Item key="5">
+          <Link to="/course-viedoes">Course Lecture</Link>
         </Menu.Item>
       </Menu>
     </Sider>

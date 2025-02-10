@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input, Row, Col, Card, Button, Layout } from 'antd';
-import Sidebar from './Sidebar';
+import Sidebar from './SideBar';
 
 const { Content } = Layout;
 

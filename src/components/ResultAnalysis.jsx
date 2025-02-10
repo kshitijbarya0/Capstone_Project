@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input, Row, Col, Card, Statistic, Button, Layout } from 'antd';
 import { Line } from 'react-chartjs-2';
-import Sidebar from './Sidebar';
+import Sidebar from './SideBar';
 import { Chart as ChartJS } from 'chart.js';
 import { Chart, LinearScale, CategoryScale, PointElement, LineElement } from 'chart.js';
 
