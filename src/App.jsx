@@ -7,6 +7,7 @@ import Loginform from "./Pages/loginform";
 import PYQ from './components/PYQ';
 import MCQ from './components/MCQ';
 import ResultAnalysis from './components/ResultAnalysis';
+import CourseVideos from "./components/CourseVideos";
 import './App.css';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
           <Route path="/mcq" element={<MCQ />} />
           <Route path="/result-analysis" element={<ResultAnalysis />} />
           <Route path="/admin-dashboard" element={<DashboardAdmin />} />
+          <Route path="/course-viedoes" element={<CourseVideos />} />
+
+
           
         </Routes>
       </Router>
