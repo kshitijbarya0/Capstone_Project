@@ -7,7 +7,7 @@ const cors = require("cors");
 const mongoose = require('./service/db');
 const app = express();
 app.use(cors({
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "https://learnpro-edu-rv.netlify.app", // Frontend URL
     credentials: true, // Allow cookies
   }));
 app.use(express.json());
